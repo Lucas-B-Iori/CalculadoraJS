@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Javascript</title>
+    <link rel="stylesheet" href="styles.css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Calculadora Javascript</h1>
+    </header>
+    <main>
+        <section class="calculadora">
+            <div class="calculadora__resultado" id="resultado"></div>
+            <div class="calculadora__itens">
+                <button class="item__botao botao__restart">C</button>
+                <button class="item__botao" id="divide">/</button>
+                <button class="item__botao" id="multiplica">*</button>
+                <button class="item__botao" id="subtrai">-</button>
+                <button class="item__botao numero" data-numero>9</button>
+                <button class="item__botao numero" data-numero>8</button>
+                <button class="item__botao numero" data-numero>7</button>
+                <button class="item__botao botao-duplo__mais" id="soma">+</button>
+                <button class="item__botao numero" data-numero>6</button>
+                <button class="item__botao numero" data-numero>5</button>
+                <button class="item__botao numero" data-numero>4</button>
+                <button class="item__botao numero" data-numero>3</button>
+                <button class="item__botao numero" data-numero>2</button>
+                <button class="item__botao numero" data-numero>1</button>
+                <button class="item__botao botao-duplo__enter" id="enter">Enter</button>
+                <button class="item__botao botao-duplo__zero" data-numero>0</button>
+                <button class="item__botao numero">.</button>
+            </div>
+        </section>
+
+        <section class="calculos">
+            <button class="calculos__mostrar">Mostrar últimos cálculos</button>
+            <ul class="calculos__lista">
+            </ul>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

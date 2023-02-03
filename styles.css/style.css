@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(202, 202, 201);
+}
+
+.cabecalho {
+    background-color: #000;
+    text-align: center;
+    color: #FFF;
+    padding: 2rem 0;
+    font-size: 21px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calculadora {
+    background-color: rgb(103, 103, 103);
+    width: 23vw;
+    height: auto;
+    margin: 3em;
+    margin-left: 6em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.calculadora__resultado {
+    background-color: #000;
+    color: #FFF;
+    width: auto;
+    height: 20px;
+    padding: 2.5rem .5rem;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.calculadora__itens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.item__botao {
+    padding: 1.5em 0;
+    background-color: ghostwhite;
+    border: .3px solid black;
+}
+
+.item__botao:hover {
+    cursor: pointer;
+}
+
+.botao-duplo__mais {
+    grid-column: 4/4;
+    grid-row: 2/3;
+}
+
+.botao-duplo__enter {
+    grid-column: 4/4;
+    grid-row: 3/6;
+    background-color: darkcyan;
+    border: none;
+
+}
+
+.botao-duplo__zero {
+    grid-area: 5/1/5/3;
+}
+
+.calculos__mostrar {
+    padding: 1.2rem;
+    border-radius: 500px;
+    background-color: darkcyan;
+    cursor: pointer;
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.calculos__lista {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}
+
+.lista__item {
+    list-style: none;
+    font-size: 1.6em;
+    border: 1px solid black;
+    background-color: gray;
+    padding: .5em;
+}
